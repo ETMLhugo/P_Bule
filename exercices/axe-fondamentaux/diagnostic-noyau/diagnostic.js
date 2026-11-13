@@ -12,13 +12,7 @@ return typeof value;
  * Indique si la valeur est undefined.
  */
 export function isUndefined(value) {
-  if ( value === undefined )
-  {
-    return true;
-  }
-  else{
-    return false;
-  }
+  return value === undefined
 }
 
 /**

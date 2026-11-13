@@ -4,7 +4,11 @@
  * Additionne les numéros de ronde de 1 au nombre indiqué.
  */
 export function sumRounds(numberOfRounds) {
-  // TODO
+ for (let i = 0; i < numberOfRounds; i++) {
+   let a = 1
+   a +=a;
+}
+return a;
 }
 
 /**
