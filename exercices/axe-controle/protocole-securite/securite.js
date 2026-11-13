@@ -4,14 +4,20 @@
  * Valide une quantité d'énergie.
  */
 export function validateEnergy(energy) {
-  // TODO
+  if (energy < 0) {
+    throw new Error("Énergie invalide");
+  } else return energy;
 }
-
 /**
  * Vérifie une énergie sans propager l'exception.
  */
 export function safeEnergyCheck(energy) {
-  // TODO
+  try {
+    validateEnergy(energy);
+  } catch (error) {
+    return "Énergie invalide";
+  }
+  return "Énergie valide";
 }
 
 /**
