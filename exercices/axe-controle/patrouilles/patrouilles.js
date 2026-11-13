@@ -5,11 +5,10 @@
  */
 export function sumRounds(numberOfRounds) {
   let a = 0;
- for (let i = 1; i <= numberOfRounds; i++) {
-   a = a+i;
-   
-}
-return a;
+  for (let i = 1; i <= numberOfRounds; i++) {
+    a = a + i;
+  }
+  return a;
 }
 
 /**
@@ -17,22 +16,21 @@ return a;
  */
 export function countSymbols(code) {
   let result = 0;
-for (let x of code) {
-  result++;
-}
-return result;
+  for (let x of code) {
+    result++;
+  }
+  return result;
 }
 
 /**
  * Compte le nombre de caractères `X` dans un code.
  */
 export function countX(code) {
-   let result = 0;
-for (let x of code) {
-  if ( x == "X")
-  result++;
-}
-return result;
+  let result = 0;
+  for (let x of code) {
+    if (x == "X") result++;
+  }
+  return result;
 }
 
 /**
@@ -42,9 +40,9 @@ export function turnsBeforeEmpty(energy, consumption) {
   let i = 0;
   while (energy >= consumption) {
     i++;
-  energy = energy - consumption;
-  
-} return i;
+    energy = energy - consumption;
+  }
+  return i;
 }
 
 /**
@@ -53,9 +51,9 @@ export function turnsBeforeEmpty(energy, consumption) {
 export function firstRoundAbove(limit) {
   let a = 1;
   let i = 1;
-while(a <= limit){
-a = a+i;
-i++
-}
-return i;
+  while (a <= limit) {
+    a = a + i;
+    i++;
+  }
+  return i;
 }
