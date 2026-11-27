@@ -66,7 +66,14 @@ export function requiresMaster(university) {
  */
 export function isTrusted(university, title) {
   for (let i = 0; i < UNIVERSITIES.length; i++) {
-    if ((university === UNIVERSITIES[i] && (title == "Bachelor" || title == "Master") && !(university === MASTER_REQUIRED[i])) || (university === UNIVERSITIES[i] && title == "Master" && university === MASTER_REQUIRED[i])) {
+    if (
+      (university === UNIVERSITIES[i] &&
+        (title == "Bachelor" || title == "Master") &&
+        !(university === MASTER_REQUIRED[i])) ||
+      (university === UNIVERSITIES[i] &&
+        title == "Master" &&
+        university === MASTER_REQUIRED[i])
+    ) {
       return true;
     }
   }
