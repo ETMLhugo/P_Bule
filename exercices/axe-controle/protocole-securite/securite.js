@@ -72,7 +72,7 @@ export function safeGateCheck(code) {
 export function countValidAttempts(text) {
   let count = 0;
   for (let i of text) {
-    if (i == "A" || i == "B") {
+    if (i === "A" || i === "B") {
       count++;
     }
   }
@@ -89,10 +89,10 @@ export function attemptsBeforeLock(sequence) {
   let count = 0;
   let limite = 0;
   for (let i of sequence) {
-    if (i == "V") {
+    if (i === "V") {
       count++;
     }
-    if (i == "X") {
+    if (i === "X") {
       count++;
       limite++;
     }
